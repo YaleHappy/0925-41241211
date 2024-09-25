@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡片翻面遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 選擇主題的下拉選單 -->
+    <div class="selector-container">
+        <label for="theme-selector">選擇卡片主題：</label>
+        <select id="theme-selector">
+            <option value="anime">動漫主題</option>
+            <option value="tools">工具主題</option>
+        </select>
+    </div>
+
+    <!-- 按鈕 -->
+    <div class="button-container">
+        <button id="start-game">開始遊戲</button>
+        <button id="show-front">顯示正面</button>
+        <button id="show-back">顯示背面</button>
+    </div>
+
+    <!-- 卡片容器 -->
+    <div class="card-container" id="card-container">
+        <!-- 卡牌將由 JS 動態插入 -->
+    </div>
+
+    <!-- 聲音檔案 -->
+    <audio id="match-sound" src="sounds/match-sound.mp3"></audio>
+    <audio id="fail-sound" src="sounds/fail.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
